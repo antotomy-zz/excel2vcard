@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Excel to Vcard Converter</title>
+</head>
+<body>
+    <form enctype="multipart/form-data" action="/convert/" method="POST">
+        <div>
+            Start row
+            <input name="start_row" type="text" value="1">
+        </div>
+        <div>
+            First Name Column
+            <select name="first_name_column_no" id="first_name_column_no">
+                <option value="0" selected>A</option>
+                <option value="1">B</option>
+                <option value="2">C</option>
+                <option value="3">D</option>
+                <option value="4">E</option>
+            </select>
+        </div>
+        <div>
+            Last Name Column
+            <select name="last_name_column_no" id="last_name_column_no">
+                <option value="0">A</option>
+                <option value="1" selected>B</option>
+                <option value="2">C</option>
+                <option value="3">D</option>
+                <option value="4">E</option>
+            </select>
+        </div>
+        <div>
+            Contact No Column
+            <select name="contact_no_column_no" id="contact_no_column_no">
+                <option value="0">A</option>
+                <option value="1">B</option>
+                <option value="2" selected>C</option>
+                <option value="3">D</option>
+                <option value="4">E</option>
+            </select>
+        </div>
+        <input name="contacts_file" type="file" accept=".xlsx">
+        <input type="submit" value="Upload">
+    </form>
+</body>
+</html>
